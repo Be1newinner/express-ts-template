@@ -41,7 +41,7 @@ Ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/express-ts-template.git
+git clone https://github.com/Be1newinner/express-ts-template.git
 cd express-ts-template
 ```
 
@@ -65,17 +65,24 @@ The template follows a modular and scalable folder structure:
 
 ```
 express-ts-template/
-├── src/
-│   ├── index.ts         # Application entry point
-│   ├── routes/          # Route definitions
-│   ├── controllers/     # Business logic
-│   ├── middlewares/     # Middleware functions
-│   └── models/          # Database models or interfaces
-├── tsconfig.json        # TypeScript configuration
-├── nodemon.json         # Nodemon configuration
-├── package.json         # Project metadata and scripts
-├── .eslintrc.json       # ESLint configuration
-└── .prettierrc          # Prettier configuration
+├── eslint.config.js
+├── LICENSE
+├── loader.mjs
+├── nodemon.json
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── controllers
+│   │   └── sample.ts
+│   ├── index.ts
+│   ├── middlewares
+│   │   └── sample.ts
+│   ├── models
+│   │   └── sample.ts
+│   └── routes
+│       └── sample.ts
+└── tsconfig.json
 ```
 
 ---
@@ -90,7 +97,7 @@ Run the app with **Nodemon** for auto-reloading:
 npm run dev
 ```
 
-Access the application at: [http://localhost:3000](http://localhost:3000)
+Access the application at: [http://localhost:8000](http://localhost:8000)
 
 ### 2. Build for Production
 
